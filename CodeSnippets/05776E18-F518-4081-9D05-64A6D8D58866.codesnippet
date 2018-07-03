@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>randomColor</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UIColor *)randomColor
+{
+    switch (arc4random()%5) {
+        case 0:return [UIColor greenColor];
+        case 1:return [UIColor blueColor];
+        case 2:return [UIColor orangeColor];
+        case 3:return [UIColor redColor];
+        case 4:return [UIColor purpleColor];
+    }
+    return [UIColor blackColor];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>05776E18-F518-4081-9D05-64A6D8D58866</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>randomColor</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>randomColor</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

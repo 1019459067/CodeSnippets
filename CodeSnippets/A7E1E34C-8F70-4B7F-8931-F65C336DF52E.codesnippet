@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>IBDesignable</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@IBDesignable class MyView: UIView {
+    
+    @IBInspectable var str:String = "hello"
+    @IBInspectable var bWidth:CGFloat = 0 {
+    didSet {
+        layer.borderWidth = bWidth
+    }
+    }
+    @IBInspectable var bColor:UIColor = UIColor.clearColor() {
+        didSet {
+            layer.borderColor = bColor.CGColor
+        }
+    }
+    @IBInspectable var cor:CGFloat = 0 {
+        didSet {
+            layer.cornerRadius = cor
+        }
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A7E1E34C-8F70-4B7F-8931-F65C336DF52E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>自定义控件的使用</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

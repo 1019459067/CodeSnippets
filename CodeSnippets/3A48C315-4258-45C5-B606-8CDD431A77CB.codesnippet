@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>animation</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    UILabel *noteLabel = [[UILabel alloc]initWithFrame:CGRectMake(100, self.view.frame.size.width * 0.5 + 20, self.view.frame.size.width - 100 *2, 30)];
+    noteLabel.backgroundColor = [UIColor blackColor];
+    noteLabel.alpha = 1;
+    noteLabel.textColor = [UIColor whiteColor];
+    noteLabel.textAlignment = NSTextAlignmentCenter;
+    noteLabel.font = [UIFont systemFontOfSize:15.0f];
+    noteLabel.text = [NSString stringWithFormat:@"所点击价格:%@",&lt;#name#&gt;];
+    [self.view addSubview:noteLabel];
+    
+    [UIView animateWithDuration:2.0 animations:^{
+        noteLabel.alpha = 0;
+    }completion:^(BOOL finished) {
+        [noteLabel removeFromSuperview];
+    }];
+});</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3A48C315-4258-45C5-B606-8CDD431A77CB</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>animation</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>提示动画</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
